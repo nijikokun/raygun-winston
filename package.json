@@ -1,0 +1,33 @@
+{
+  "name": "raygun-winston",
+  "version": "1.0.0",
+  "description": "Raygun transport for Winston",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nijikokun/raygun-winston.git"
+  },
+  "keywords": [
+    "raygun",
+    "winston",
+    "logging",
+    "transport",
+    "plugin",
+    "module",
+    "tools",
+    "sysadmin"
+  ],
+  "author": "Nijiko Yonskai <nijikokun@gmail.com> (http://nijikokun.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nijikokun/raygun-winston/issues"
+  },
+  "homepage": "https://github.com/nijikokun/raygun-winston#readme",
+  "dependencies": {
+    "raygun": "^0.8.3",
+    "winston": "^2.1.1"
+  }
+}
