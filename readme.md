@@ -1,4 +1,4 @@
-# raygun-winston [![Build Status][build-image]][build-url]
+# raygun-winston [![NPM Version][version-image]][version-url] [![Build Status][build-image]][build-url] [![Dependency Status][david-image]][david-url]
 
 [Raygun][raygun] transport for [winston][winston] using the [raygun4node][raygun-node] library
 
@@ -39,6 +39,10 @@ The following winston log metadata properties are used in certain ways:
 - **meta.err** - Replaces generated `Error` object sent (better stack traces)
 - **meta.tags** - Custom tags for this specific request.
 
+[version-url]: https://www.npmjs.com/package/raygun-winston
+[version-image]: https://img.shields.io/npm/v/raygun-winston.svg
+[david-url]: https://david-dm.org/Nijikokun/raygun-winston
+[david-image]: https://david-dm.org/Nijikokun/raygun-winston.svg
 [raygun]: https://raygun.io
 [raygun-node]: https://github.com/MindscapeHQ/raygun4node
 [winston]: https://github.com/winstonjs/winston
