@@ -57,20 +57,25 @@ Raygun.prototype.log = function (level, msg, meta, callback) {
   var tags
   var err
   var req
+  var res
 
   if (level !== 'error' || this.silent) {
     return callback(null, true)
   }
 
+  if (meta.req) {
+    req = meta.req
+    meta.req = undefined
+  }
+
+  if (meta.res) {
+    res = meta.res
+    meta.res = undefined
+  }
+
   error = winston.clone(meta || {})
   error.level = level
   error.message = msg
-
-  if (error.req) {
-    req = error.req
-    error.req = undefined
-    meta.req = undefined
-  }
 
   if (error.err) {
     err = error.err
@@ -82,8 +87,8 @@ Raygun.prototype.log = function (level, msg, meta, callback) {
     error.tags = undefined
   }
 
-  this.client.send(err || new Error(error.message), error, function (res) {
-    var code = res.statusCode > 499 ? '5XX' : res.statusCode
+  this.client.send(err || new Error(error.message), error, function (raygunResponse) {
+    var code = raygunResponse.statusCode > 499 ? '5XX' : raygunResponse.statusCode
 
     if (Raygun.errorMessages[code]) {
       return callback(new Error('RaygunTransport [' + code + '] ' + Raygun.errorMessages[code]))
