@@ -23,6 +23,7 @@ Instantiate before any other transports to ensure certain metadata properties ar
 * **apiKey**: *String* - Raygun API key, can be found in your Application General Settings
 * **tags**: *Array* - Raygun tags
 * **user**: *Function* - Generate user object using passed `req` object
+* **version**: *String* - For version tracking, calls `raygun.setVersion`
 
 Additionally, any option supported by [raygun4node][raygun-node] library.
 

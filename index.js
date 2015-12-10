@@ -27,6 +27,11 @@ var Raygun = module.exports = function (options) {
   if (typeof options.user === 'object') {
     this.client.setUser(options.user)
   }
+
+  // Enable version tracking
+  if (typeof options.version !== 'undefined') {
+    this.client.setVersion(options.version)
+  }
 }
 
 // Error Message Dictionary
