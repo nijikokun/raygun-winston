@@ -1,6 +1,6 @@
 {
   "name": "raygun-winston",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Raygun transport for Winston",
   "main": "index.js",
   "scripts": {
