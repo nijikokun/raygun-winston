@@ -42,10 +42,10 @@ The following winston log metadata properties are used in certain ways:
 
 [version-url]: https://www.npmjs.com/package/raygun-winston
 [version-image]: https://img.shields.io/npm/v/raygun-winston.svg
-[david-url]: https://david-dm.org/Nijikokun/raygun-winston
-[david-image]: https://david-dm.org/Nijikokun/raygun-winston.svg
+[david-url]: https://david-dm.org/nijikokun/raygun-winston
+[david-image]: https://david-dm.org/nijikokun/raygun-winston.svg
 [raygun]: https://raygun.io
 [raygun-node]: https://github.com/MindscapeHQ/raygun4node
 [winston]: https://github.com/winstonjs/winston
-[build-url]: http://travis-ci.org/Nijikokun/raygun-winston
-[build-image]: https://secure.travis-ci.org/Nijikokun/raygun-winston.png
+[build-url]: http://travis-ci.org/nijikokun/raygun-winston
+[build-image]: https://secure.travis-ci.org/nijikokun/raygun-winston.png
